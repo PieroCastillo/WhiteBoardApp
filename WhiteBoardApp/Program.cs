@@ -19,7 +19,7 @@ namespace WhiteBoardApp
             => AppBuilder.Configure<App>()
                 .UsePlatformDetect()
                 .UseSkia()
-                .With(new Win32PlatformOptions { AllowEglInitialization = true, UseDeferredRendering = true, UseWindowsUIComposition = true })
+                .With(new Win32PlatformOptions { AllowEglInitialization = true, UseDeferredRendering = true })
                 .With(new X11PlatformOptions { UseGpu = true, UseEGL = true })
                 .With(new AvaloniaNativePlatformOptions { UseGpu = true })
                 .LogToTrace();

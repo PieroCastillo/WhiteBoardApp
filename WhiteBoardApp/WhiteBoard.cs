@@ -104,6 +104,7 @@ namespace WhiteBoardApp
         public override void Render(DrawingContext context)
         {
             context.DrawImage(bitmap, new Rect(0, 0, Bounds.Width, Bounds.Height));
+            Dispatcher.UIThread.InvokeAsync(InvalidateVisual, DispatcherPriority.Background);
         }
     }
 }
