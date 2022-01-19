@@ -1,0 +1,8 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="WhiteBoardApp.App">
+  <Application.Styles>
+    <FluentTheme Mode="Light"/>
+    <StyleInclude Source="/WhiteBoardController.axaml"/>
+  </Application.Styles>
+</Application>
